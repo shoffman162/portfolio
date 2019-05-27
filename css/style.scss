@@ -1,0 +1,64 @@
+//IMPORT MIXINS
+@import "flexbox";
+
+html{
+    font-family: 'Roboto'
+}
+
+header{
+    background-color:#f1f1f1;
+    width:100%;
+    background-position:bottom;
+    
+    .container{
+        margin: 0 auto;
+        max-width: 1400px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width:90%;
+        color:#000;
+        .left-half{
+            width:40%;
+            @include inline-flex;
+            .profilepic{
+                border-radius: 100px;
+                height:120px;
+            }
+            div{
+                margin-left:10px;
+                h1{
+                    margin-bottom:0px;
+                    font-family: 'Merriweather', serif;
+                    font-weight:700;
+                }
+                h2{
+                
+                    font-size:16px;
+                    margin:8px 0px;
+                }
+            }
+        }
+        .right-half{
+            float:right;
+                text-align:center;
+                font-family:'Open Sans';
+        }
+    }
+}
+#content{
+    background: url(../images/apple-1868496_1920.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:calc(100vh - 120px);
+    .container{
+        margin: 0 auto;
+        max-width: 1400px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 55%;
+        position:relative;
+        top:100px;
+    
+    }
+}
