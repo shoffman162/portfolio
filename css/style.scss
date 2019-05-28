@@ -1,64 +1,72 @@
 //IMPORT MIXINS
 @import "flexbox";
 
-html{
-    font-family: 'Roboto'
-}
+body{
+    margin:0px;
+    @include flexbox;
+    .sidebar{
+        width:25%;
+        background: url(../images/background-2426328_1920.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        color:#fff;
+        position:fixed;
+        right:0px;
+        height:100vh;
+        text-align:center;
+        padding-top:60px;
+        text-shadow:2px 2px black;
+        background-color:#252525;
+        img.profilepic{
+            border-radius:100px;
+        }
+        h1{
+            font-family: 'Merriweather', serif;
+            font-weight:bold;
+            font-size:30px;
+            margin-bottom:5px;
+        }
+        h2{
+            margin-top:0px;
+            font-family: 'Roboto', serif;
+        }
+      
+        .phone,.email{
+            font-family: 'Open Sans', sans-serif;
+            font-weight:bold;
+            font-size:18px;
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            a{
+                margin-left:15px;
+                color:#fff;
+                text-decoration:none;
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+        .icons{
+            width:65%;
+            margin:0 auto;
+            .fa-html5,.fa-css3-alt,.fa-js,.fa-php,.fa-wordpress,.fa-sass,.fa-git,.fa-gulp{
+                font-size:50px;
+                width: 50%;
+                float: left;
+                margin:15px 0px;
+            }
+        }
+    }
+    .maincontent{
+        width:75%;
+        header{
+            height: 70px;
+            background-color: #252525;
+            background: url(../images/background-2426328_1920.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+    }
 
-header{
-    background-color:#f1f1f1;
-    width:100%;
-    background-position:bottom;
-    
-    .container{
-        margin: 0 auto;
-        max-width: 1400px;
-        padding-left: 15px;
-        padding-right: 15px;
-        width:90%;
-        color:#000;
-        .left-half{
-            width:40%;
-            @include inline-flex;
-            .profilepic{
-                border-radius: 100px;
-                height:120px;
-            }
-            div{
-                margin-left:10px;
-                h1{
-                    margin-bottom:0px;
-                    font-family: 'Merriweather', serif;
-                    font-weight:700;
-                }
-                h2{
-                
-                    font-size:16px;
-                    margin:8px 0px;
-                }
-            }
-        }
-        .right-half{
-            float:right;
-                text-align:center;
-                font-family:'Open Sans';
-        }
-    }
-}
-#content{
-    background: url(../images/apple-1868496_1920.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    height:calc(100vh - 120px);
-    .container{
-        margin: 0 auto;
-        max-width: 1400px;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 55%;
-        position:relative;
-        top:100px;
-    
-    }
 }

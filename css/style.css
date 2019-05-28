@@ -1,52 +1,59 @@
-html {
-  font-family: 'Roboto'; }
-
-header {
-  background-color: #f1f1f1;
-  width: 100%;
-  background-position: bottom; }
-  header .container {
-    margin: 0 auto;
-    max-width: 1400px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 90%;
-    color: #000; }
-    header .container .left-half {
-      width: 40%;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -moz-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex; }
-      header .container .left-half .profilepic {
-        border-radius: 100px;
-        height: 120px; }
-      header .container .left-half div {
-        margin-left: 10px; }
-        header .container .left-half div h1 {
-          margin-bottom: 0px;
-          font-family: 'Merriweather', serif;
-          font-weight: 700; }
-        header .container .left-half div h2 {
-          font-size: 16px;
-          margin: 8px 0px; }
-    header .container .right-half {
-      float: right;
-      text-align: center;
-      font-family: 'Open Sans'; }
-
-#content {
-  background: url(../images/apple-1868496_1920.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: calc(100vh - 120px); }
-  #content .container {
-    margin: 0 auto;
-    max-width: 1400px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 55%;
-    position: relative;
-    top: 100px; }
+body {
+  margin: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  body .sidebar {
+    width: 25%;
+    background: url(../images/background-2426328_1920.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    text-align: center;
+    padding-top: 60px;
+    text-shadow: 2px 2px black;
+    background-color: #252525; }
+    body .sidebar img.profilepic {
+      border-radius: 100px; }
+    body .sidebar h1 {
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 5px; }
+    body .sidebar h2 {
+      margin-top: 0px;
+      font-family: 'Roboto', serif; }
+    body .sidebar .phone, body .sidebar .email {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+      body .sidebar .phone a, body .sidebar .email a {
+        margin-left: 15px;
+        color: #fff;
+        text-decoration: none; }
+        body .sidebar .phone a:hover, body .sidebar .email a:hover {
+          text-decoration: underline; }
+    body .sidebar .icons {
+      width: 65%;
+      margin: 0 auto; }
+      body .sidebar .icons .fa-html5, body .sidebar .icons .fa-css3-alt, body .sidebar .icons .fa-js, body .sidebar .icons .fa-php, body .sidebar .icons .fa-wordpress, body .sidebar .icons .fa-sass, body .sidebar .icons .fa-git, body .sidebar .icons .fa-gulp {
+        font-size: 50px;
+        width: 50%;
+        float: left;
+        margin: 15px 0px; }
+  body .maincontent {
+    width: 75%; }
+    body .maincontent header {
+      height: 70px;
+      background-color: #252525;
+      background: url(../images/background-2426328_1920.jpg);
+      background-size: cover;
+      background-position: bottom; }
