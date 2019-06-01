@@ -13,7 +13,7 @@ body{
         position:fixed;
         right:0px;
         height:100vh;
-        text-align:center;
+        //
         padding-top:10px;
         text-shadow:2px 2px black;
         background-color:#252525;
@@ -61,40 +61,28 @@ body{
     }
     .maincontent{
         width:75%;
-        .thaiorchid{
-            background: url(../images/ThaiOrchid.jpg);
-            background-size:cover;
-            height:500px;
-            &:hover{
-                .overlay{
-                    background: rgba(31, 31, 31, 0.70);
-                    opacity: 1;
-                    height:100%;
-                }
-            }
-        }
-        header{
-            height: 60px;
-            background-color: #252525;
-            // background: url(../images/background-2426328_1920.jpg);
-            background-size: cover;
-            background-position: bottom;
-            padding:0px 15px;
-            @include flexbox;
-            @include align-items(center);
-            .logo{
-                border-radius:100px;
-                height:60px;
-            }
-            nav{
-                display:inline-block;
-                a{
-                    color:#fff;
-                    font-family: 'Merriweather', serif;
-                    text-decoration: none;
-                }
-            }
-        }
+        // header{
+        //     height: 60px;
+        //     background-color: #252525;
+        //     // background: url(../images/background-2426328_1920.jpg);
+        //     background-size: cover;
+        //     background-position: bottom;
+        //     padding:0px 15px;
+        //     @include flexbox;
+        //     @include align-items(center);
+        //     .logo{
+        //         border-radius:100px;
+        //         height:60px;
+        //     }
+        //     nav{
+        //         display:inline-block;
+        //         a{
+        //             color:#fff;
+        //             font-family: 'Merriweather', serif;
+        //             text-decoration: none;
+        //         }
+        //     }
+        // }
     }
 
 }
