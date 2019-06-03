@@ -2,87 +2,120 @@
 @import "flexbox";
 
 body{
-    margin:0px;
-    @include flexbox;
-    .sidebar{
-        width:25%;
-        //background: url(../images/background-2426328_1920.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        color:#fff;
-        position:fixed;
-        right:0px;
-        height:100vh;
-        //
-        padding-top:10px;
-        text-shadow:2px 2px black;
-        background-color:#252525;
-        img.profilepic{
-            border-radius:100px;
-            height:190px;
-        }
-        h1{
-            font-family: 'Merriweather', serif;
-            font-weight:bold;
-            font-size:30px;
-            margin-bottom:5px;
-        }
-        h2{
-            margin-top:0px;
-            font-family: 'Roboto', serif;
-        }
-      
-        .phone,.email{
-            font-family: 'Open Sans', sans-serif;
-            font-weight:bold;
-            font-size:18px;
-            // width: 75%;
-            margin: 0 auto;
-            margin-bottom: 10px;
-            a{
-                margin-left:15px;
-                color:#fff;
-                text-decoration:none;
-                &:hover{
-                    text-decoration:underline;
+    background-color:#F8F9FA;
+    header{
+            height: 60px;
+            width:100vw;
+            position:fixed;
+            top:0;
+            left:0;
+            background-color: #E8EAED;
+            padding:0px;
+            margin:0px;
+            @include flexbox;
+            @include align-items(center);
+            nav{
+                display:inline-block;
+                a{
+                    color:#fff;
+                    font-family: 'Merriweather', serif;
+                    text-decoration: none;
                 }
             }
         }
-        .icons{
-            width:65%;
-            margin:0 auto;
-            .fa-html5,.fa-css3-alt,.fa-js,.fa-php,.fa-wordpress,.fa-sass,.fa-git,.fa-gulp{
-                font-size:50px;
-                width: 50%;
-                float: left;
-                margin:15px 0px;
+     .page{
+        padding:0vw 4vw;
+        // height:100vh;
+        margin-top:60px;
+        @include flexbox;
+        h3.sectionheading{
+            font-family:'Open Sans';
+            color:#1F79C7;
+            text-transform: uppercase;
+            font-size:15px;
+            font-weight:bold;
+            margin:20px 0px;
+        }
+        .sidebar{
+            width:25%;
+            padding:2vw;
+            background-color:#fff;
+            margin:0px 20px;
+            .contact{
+                height:150px;
+                .phone,.email,.github{
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight:bold;
+                    font-size:16px;
+                    margin-bottom:5px;
+                    position:relative;
+                    top:55px;
+                    a{
+                        margin-left:15px;
+                        text-decoration:none;
+                        color:#000;
+                        &:hover{
+                            text-decoration:underline;
+                        }
+                    }
+                }
+            }
+            .icon{ 
+                @include flexbox;
+                @include align-items(center);
+                margin-bottom:5px;
+                span{
+                    font-family: 'Merriweather', serif;
+                    font-size:14px;
+                    margin-left:15px;
+                }
+                img{
+                    height:50px;
+                }
             }
         }
-    }
-    .maincontent{
-        width:75%;
-        // header{
-        //     height: 60px;
-        //     background-color: #252525;
-        //     // background: url(../images/background-2426328_1920.jpg);
-        //     background-size: cover;
-        //     background-position: bottom;
-        //     padding:0px 15px;
-        //     @include flexbox;
-        //     @include align-items(center);
-        //     .logo{
-        //         border-radius:100px;
-        //         height:60px;
-        //     }
-        //     nav{
-        //         display:inline-block;
-        //         a{
-        //             color:#fff;
-        //             font-family: 'Merriweather', serif;
-        //             text-decoration: none;
-        //         }
-        //     }
-        // }
-    }
+        .maincontent{
+            width:75%;
+            background-color:#fff;
+            padding:2vw;
+            margin:0px 20px;
+            .profile{
+                height:150px;
+                @include flexbox;
+                @include align-items(center);
+                div{
+                    margin-left:15px;
+                        h1{
+                            font-family: 'Merriweather', serif;
+                            font-weight:bold;
+                            font-size:32px;
+                            margin:5px 0px;
+                        }
+                        h2{
+                            font-family: 'Roboto';
+                            font-size:16px;
+                            margin:5px 0px;
+                        }
+                }
+                img.profilepic{
+                    border-radius:100px;
+                    height:150px;
+                    float:left;
+                }
+            }
+            .job{
+                h4{
+                    font-family: 'Merriweather', serif;
+                    font-size:15px;
+                    .company{
+                        font-weight:bold;
+                    }
+                    .position{
+                        font-style:italic;
+                    }
+                }
+            }
+        }
 
+    }
 }
